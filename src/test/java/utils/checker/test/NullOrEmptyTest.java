@@ -34,6 +34,7 @@ import static org.junit.Assert.*;
 
 import static utils.checker.NullOrEmpty.*;
 
+import java.io.IOException;
 import java.util.HashMap;
 import java.util.Hashtable;
 
@@ -80,5 +81,15 @@ public class NullOrEmptyTest {
 	public void testCheckingIterableAndMap() {
 		assertEquals(true, check(new Hashtable<>()));
 		assertEquals(true, check(new HashMap<>()));
+	}
+
+	@Test
+	public void testCheckingInputStream() {
+		try {
+			assertEquals(true, check(System.in));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 }

@@ -30,6 +30,8 @@
 */
 package utils.checker;
 
+import java.io.IOException;
+import java.io.InputStream;
 import java.util.Iterator;
 import java.util.Map;
 
@@ -105,6 +107,18 @@ public class NullOrEmpty {
 	}
 
 	/**
+	 * Check null or empty for input-stream.<br>
+	 * 检查输入流是否为null或为空.
+	 * 
+	 * @param inputStream
+	 * @return
+	 * @throws IOException
+	 */
+	public static final boolean check(InputStream inputStream) throws IOException {
+		return null == inputStream || inputStream.available() == 0;
+	}
+
+	/**
 	 * Check null or empty for object.<br>
 	 * 检查对象是否为null或为空.
 	 * 
@@ -115,5 +129,4 @@ public class NullOrEmpty {
 		return null == object || object.equals(null) || NullOrEmpty.check(object.toString())
 				|| null == object.getClass();
 	}
-
 }
