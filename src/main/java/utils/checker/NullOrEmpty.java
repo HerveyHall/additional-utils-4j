@@ -36,7 +36,7 @@ import java.util.Iterator;
 import java.util.Map;
 
 /**
- * This checker is used to check an object is "null" or "empty".<br>
+ * This checker is used to check if an object is "null" or "empty".<br>
  * 检查对象是否为null或为空的检查器.
  * 
  * @author Hervey Hall <mail@herveyhall.cf>
