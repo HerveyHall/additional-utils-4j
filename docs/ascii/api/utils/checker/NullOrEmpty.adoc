@@ -1,0 +1,51 @@
+= utils.checker.NullOrEmpty
+=== static methods
+===== check(InputStream inputStream)
+	Check null or empty for input-stream.
+	检查输入流是否为null或为空.
+	Parameters:
+	inputStream - the input-stream which needs to be checked
+	Returns:
+	whether the input-stream is null or empty
+	Throws:
+	IOException - if an I/O error occurs
+
+===== check(Iterable<E> iterable)
+	Check null or empty for iterable object.
+	检查可迭代对象是否为null或为空.
+	Parameters:
+	iterable - the iterable object which needs to be checked
+	Returns:
+	whether the iterable object is null or empty
+
+===== check(Map<K,V> map)
+	Check null or empty for map.
+	检查映射对象是否为null或为空.
+	Parameters:
+	map - the map which needs to be checked
+	Returns:
+	whether the map is null or empty
+
+===== check(Object object)
+	Check null or empty for object.
+	检查对象是否为null或为空.
+	Parameters:
+	object - the object which needs to be checked
+	Returns:
+	whether the object is null or empty
+
+===== check(String string)
+	Check null or empty for string.
+	检查字符串是否为null或为空.
+	Parameters:
+	string - the string which needs to be checked
+	Returns:
+	whether the string is null or empty
+
+===== check(T[] array)
+	Check null or empty for array.
+	检查数组是否为null或为空.
+	Parameters:
+	array - the array which needs to be checked
+	Returns:
+	whether the array is null or empty
